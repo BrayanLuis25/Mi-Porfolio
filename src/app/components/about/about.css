@@ -1,0 +1,83 @@
+/*La regla:
+si width = 100% → no se puede mover
+si width < 100% → sí se puede alinear*/
+:host {
+  display: block;
+
+
+ 
+  min-height: 10vh; /*altura a dar a toda la pagina*/
+  padding: 2rem;
+}
+
+.about{ /*contenedor mide todo y ala izuiera*/
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+display: flex;
+flex-flow: column;
+align-items: flex-end;
+gap: 20px;
+
+}
+
+article{
+
+ text-align: left;
+  width: 70%;/*dar 70 para ver el desplazamiento*/
+   padding: 20px;
+  
+ 
+
+
+ /*gap:10px; funciona si es display flex o grid*/
+}
+article>.perfilAbout{
+    font-size: 40px;
+    padding: 2px;
+    border: 5px;
+  
+    color:#052936;
+
+/*background-color: red; 
+    background-color: whitesmoke;
+    color:#052936;
+*/
+}
+ul> li{
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+}
+.strongProfesion{
+    font-size: 25px;
+    color: black;
+   padding: 2px;
+}
+/*Ahí defines cómo se ve y se comporta visualmente el <a>*/
+article> .parrafoAbout{
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 2px;
+      color:#052936;
+   /* background-color: green;*/
+}
+
+/*Si quieres TODO a la izquierda
+
+Realmente ya está 👇
+👉 Por defecto h1 y p se alinean a la izquierda
+
+Si quieres asegurarlo:
+
+article{
+  text-align: left;
+}
+🎯 Resumen
+
+✔ Tu estructura HTML está bien
+✔ Error era el margin-left
+✔ gap no aplica aquí
+
+Vas bien 👌 solo era ajuste de CSS*/

@@ -1,0 +1,41 @@
+:host{
+
+     display: block;
+
+
+ 
+  min-height: 10vh; /*altura a dar a toda la pagina*/
+  padding: 2rem;
+}
+h1{
+    text-align: center;/*las letras*/
+   
+    width: 100%;/*quiero que ocupe todo*/
+    margin-left: auto;
+    margin-right: auto;
+    color: aliceblue;
+     background-color:#223840;
+        padding: 10px;
+        border-radius: 20px;
+}
+section{
+ display: flex;
+flex-flow: column;
+align-items: flex-end;
+gap: 20px;
+background-color: azure;
+padding: 20px;
+}
+article{
+padding: 20px;
+    width: 70%;
+
+}
+h2{
+color: black;
+font-size:25px;
+}
+p{
+color: black;
+font-size:20px;
+}

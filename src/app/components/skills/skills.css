@@ -1,0 +1,105 @@
+:host {
+  display: block;
+
+
+ 
+  min-height: 100vh;
+  padding: 2rem;
+}
+.skills{
+font-size: 40px;
+text-align: center;
+color: white;
+background-color:#223840;
+margin: 0 auto;
+padding: 10px;
+border-radius: 20px;
+
+}
+
+.section-layout{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   /* grid-template-rows: 150px 150px 150px;*/
+    gap: 10px;
+
+}
+.titulo{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.articleBackend{
+    width: 100%;/*ocupe todo o puedo decirle menos*/
+
+
+    display: flex;
+    flex-flow: column;
+   align-items: center;
+    background-color: whitesmoke;
+    color:#052936;
+}
+.contenedor-logos{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+     background: azure;
+    border-radius: 35px;
+      padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.contenedor-logos>div{
+    border-radius: 20px;
+}
+.logosJava{
+
+width: 90%;
+height: 150px;
+margin:10px
+
+}
+/*Sí, el elemento <img> en HTML es un elemento en línea 
+(inline) por defecto. Esto significa que no inicia en una
+ nueva línea y solo ocupa el ancho necesario para mostrar
+  la imagen, permitiendo que otros elementos se sitúen a 
+  su lado. Además, se considera un elemento reemplazado*/
+.articleBD{
+
+      width: 100%;
+  
+    display: flex;
+    flex-flow: column;
+   align-items: center;
+    background-color: rgb(224, 244, 244);
+    gap:10px;
+      background-color: whitesmoke;
+    color:#052936;
+}
+.contenedor-logos > div{
+    margin: 20px 10px 10px 80px;
+   
+}
+.logosBD{
+
+width: 90%;
+height: 150px;
+}
+.logosFireBase{
+    width: 60%;
+height: 135px;
+}
+
+.logosFRMW{
+    width: 70%;
+    height: 90px;
+}
+div:hover{
+    
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+
+}
+/* Fondo general suave */

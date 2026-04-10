@@ -1,1 +1,39 @@
-<p>projects works!</p>
+
+<div class="container-fluid" style="background: linear-gradient(to right,azure, #e6deef); min-height: 10vh; padding-bottom: 50px;">
+  <!-- Título principal -->
+  <div class="row justify-content-center pt-5">
+
+
+    <div class="col-12 text-center">
+      <h1 class="display-4 fw-bold text-white">Mis Proyectos <span class="blank"> </span></h1>
+      <p class="lead text-muted">Proyectos con enlace a github remoto</p>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="row justify-content-center mt-5 g-4">
+    <!-- Card genérica -->
+     <!--Recorireindo cada card del arreglo cards a mostrar-->
+    <div class="col-md-6 col-lg-4" *ngFor="let card of cards1">
+
+      <div class="card shadow border-0 rounded-4 bg-white bg-opacity-75 hover-shadow">
+        
+        <div class="card-body text-center p-4">
+          
+          <i class="{{ card.icon }} fa-2x mb-3" [ngClass]= "card.color" ></i>
+          <h5 class="card-title fw-semibold">{{ card.title }}</h5>
+          <p class="card-text text-muted">{{ card.description }}</p>
+          
+          <a *ngIf="card.link.startsWith('http')" 
+          
+          [href]="card.link"
+             target="_blank"
+          class="btn btn-outline-danger w-100">{{ card.button }}</a>
+        
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

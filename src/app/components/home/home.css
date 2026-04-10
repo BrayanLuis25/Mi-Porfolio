@@ -1,5 +1,38 @@
-.header{
+:host {
+  display: block;
 
-    display: grid;
-    
+
+ 
+  min-height: 10vh; /*altura a dar a toda la pagina*/
+  padding: 2rem;
+}
+
+.info-bryan{
+background: linear-gradient(170deg,#2e2e35, #395f6c);
+ border-radius: 20px;
+ padding: 20px;
+}
+
+.info-bryan>h1{
+  text-align: center;
+  color:azure;
+  font-size: 30px;
+  
+}
+.info-bryan>h3{
+    text-align: left;
+     margin-left: 20px; 
+  padding-left: 20px;
+    color:azure;
+    font-size: 20px;
+    padding: 10px;
+}
+.datos{
+   
+    text-align: center;
+     background-color: white;
+    color:#052936;
+}
+h2{
+margin: 20px;
 }

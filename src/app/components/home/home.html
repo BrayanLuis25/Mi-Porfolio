@@ -1,17 +1,96 @@
-<p>home works!</p>
+
 
 <header> 
 <div class="info-bryan"> 
-<h1>Brayan Luis Vilca Cabrera</h1>
-<h3>Desarrollador de Software Junior  </h3>
-<h3> Carabayllo, Lima </h3>
-<h3>956385375</h3>
-<h3>vcbryan19@gmail.com  </h3>
+<h1 > Brayan Luis Vilca Cabrera
+
+</h1>
+<h3><i class="fa-brands fa-accusoft" style="color: rgb(21, 216, 154);"></i>
+ Desarrollador de Software Junior  </h3>
+<h3> <i class="fa-solid fa-house" style="color: rgb(12, 236, 209);"></i>  Carabayllo, Lima </h3>
+<h3><i class="fa-solid fa-mobile" style="color: rgb(125, 59, 123);"></i>  956385375</h3>
+<h3> <i class="fa-solid fa-at" style="color: rgb(69, 101, 129);"></i>  vcbryan19@gmail.com  </h3>
 </div>
 
-<div>
-
-    <h2>Técnico en computacion e informatica</h2>
+<div class="datos">
+       
+    <h2>Técnico en Computacion e informatica</h2>
 
 </div>
+
 </header>
+
+<!--  
+OJOOO: LAS ETIQUIETAS ESTRUCTURALES: FORMAN LA ESTRCUURA DE LA PAGINA
+Y EL DIV QUE SON MUROS QUE PROTEGEN A OTROS ELEMETNOS(elemento de bloque).
+/************************************************/
+Ahí defines cómo se ve y se comporta visualmente el <a>
+LSO ELMETNOS de bloque y de linea como se veran el display: como bloque
+como linea, enlinea,bloque
+
+Elemento HTML ≠ comportamiento final
+display manda
+Tú decides cómo se comporta todo
+/***************************************************************/
+EN ESTE CASO, SE CENTRA LA IMAGEN: DIV COMO PADRE
+<div class="img-container">
+     y aqui dentro esta la etiuqeta <img ..../>
+    </div> entonces en css debe ser: 
+    .img-container{ text-align :center; } .se breve aqui se centra 
+
+img{
+  display: block;
+  margin: auto;}
+  ✔ Aquí ya NO sirve text-align
+✔ Se usa margin: auto
+  🧠 RESUMEN FINAL
+text-align → centra contenido inline dentro del padre, pero no la caja
+margin: auto → centra elementos block, este centra la caja
+
+/**************************************************************************/
+LOS ELMETNOS INLINE SOLO no TIENEN ANCHO ni alto
+inline → palabras, <span>, <a>
+/**********************************************************/
+Entonces esto:
+block → secciones
+inline → texto
+inline-block → botones
+flex → alineación
+grid → estructura
+
+👉 NO significa “solo usar con X etiqueta”
+👉 Es CUÁNDO te conviene usarlo
+
+/************************************************************************/
+🔹 Caso 1
+.link{
+  display: inline;
+  width: 50px;
+}
+
+❌ width NO funciona
+👉 porque inline no acepta ancho/alto
+
+🔹 Caso 2
+img{
+  display: inline-block;
+  margin: auto;
+}
+
+✔ inline-block →
+
+se comporta como inline (en línea)
+PERO sí acepta width/height ✅
+🔴 PERO OJO
+
+❌ margin: auto aquí NO centra
+👉 porque sigue siendo inline-level
+
+🧠 CLAVE FINAL
+inline → en línea, sin tamaño ❌
+inline-block → en línea + con tamaño ✅
+block → ocupa toda la línea
+
+👉 Respuesta directa:
+Sí, inline-block sigue en línea, pero ahora puedes darle medidas 👍
+-->

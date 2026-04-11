@@ -21,7 +21,6 @@ import { Experience } from './components/experience/experience';
 export class App {
   protected readonly title = signal('mi_porfolio');
 
-
 }
 /*
 ng g c components/hero
